@@ -1,0 +1,62 @@
+
+1. Print numbers 1 to 50
+for i in range(1, 51):
+    print(i)
+2. Print numbers 1 to 30 with even/odd status
+for i in range(1, 31):
+    print(f"{i} is {'even' if i % 2 == 0 else 'odd'}")
+3. Print numbers 1 to 100 divisible by 5
+for i in range(1, 101):
+    if i % 5 == 0:
+        print(i)
+4. Sum of numbers 1 to 10
+sum_of_numbers = sum(range(1, 11))
+print("Sum:", sum_of_numbers)
+5. Multiplication table
+num = int(input("Enter a number: "))
+for i in range(1, 11):
+    print(f"{num} x {i} = {num * i}")
+6. Squares of numbers 1 to 20
+for i in range(1, 21):
+    print(f"{i}^2 = {i ** 2}")
+7. Print numbers 10 to 1
+for i in range(10, 0, -1):
+    print(i)
+8. Factors of a number
+num = int(input("Enter a number: "))
+factors = [i for i in range(1, num + 1) if num % i == 0]
+print("Factors:", factors)
+9. Odd numbers 1 to 30
+odd_numbers = [i for i in range(1, 31) if i % 2 != 0]
+print(odd_numbers)
+10. Sum of even numbers 1 to 50
+sum_of_even_numbers = sum(i for i in range(1, 51) if i % 2 == 0)
+print("Sum:", sum_of_even_numbers)
+11. Number pattern
+for i in range(1, 6):
+    for j in range(1, i + 1):
+        print(j, end='')
+    print()
+12. Count numbers divisible by 3
+count = sum(1 for i in range(1, 31) if i % 3 == 0)
+print("Count:", count)
+13. Multiplication table of 5
+for i in range(1, 11):
+    print(f"5 x {i} = {5 * i}")
+14. Sum of digits
+num = input("Enter a number: ")
+sum_of_digits = sum(int(digit) for digit in num)
+print("Sum:", sum_of_digits)
+15. Numbers divisible by 2 and 3
+numbers = [i for i in range(1, 51) if i % 2 == 0 and i % 3 == 0]
+print(numbers)
+16. Print numbers 20 to 1
+for i in range(20, 0, -1):
+    print(i)
+17. Skip every 5th number
+for i in range(1, 31):
+    if i % 5 != 0:
+        print(i)
+18. Sum of numbers divisible by 4
+sum_of_numbers = sum(i for i in range(1, 41) if i % 4 == 0)
+print("Sum:", sum_of_numbers)
