@@ -1,3 +1,5 @@
+1. check wether the number is prime or not
+
 num = int(input("Enter a number: "))
 if num <= 1:
     print("Not a prime number")
@@ -7,4 +9,5 @@ else:
             print("Not a prime number")
             break
     else:
+
         print("Prime number")
